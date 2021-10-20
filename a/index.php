@@ -34,5 +34,4 @@ $use = "{$_SERVER['DOCUMENT_ROOT']}{$dir}";
 $test = scandir($use);
 print_r($test);
 echo "</br>";
-echo dir("a.txt");
 ?>
