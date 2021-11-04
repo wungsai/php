@@ -102,8 +102,9 @@ $showHigh = array_filter($listHigh, function ($var) use ($check) {
 });
 $index;
 foreach ($listHigh as $value) {
-    if($value['test']==$check){
-    $index = array_search($value, $listHigh);}
+    if ($value['test'] == $check) {
+        $index = array_search($value, $listHigh);
+    }
 }
 var_dump($index);
 echo "</br>";
@@ -111,3 +112,22 @@ echo "</br>";
 var_dump($showHigh);
 echo "</br>";
 var_dump($listHigh[$index]['id']);
+
+//compare value in Array of Arrays
+$listArray = array(
+    array(
+        "set_id" => 1,
+        "sticker_name" => "Bye.svg"
+    ), array(
+        "set_id" => 2,
+        "sticker_name" => "Bye.svg"
+    )
+);
+echo "</br>";
+var_dump($listArray);
+echo "</br>";
+foreach ($listArray as $value) {
+    if($value['set_id'] == 1){
+        var_dump ($value['sticker_name']);
+    }
+}
