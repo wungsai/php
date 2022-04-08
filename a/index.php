@@ -1,4 +1,4 @@
-<?php echo "hellow wampire ";
+<?php echo "this is working with directory and files ";
 //open windows text file by directory path
 $txt = fopen("C:\\xampp\\htdocs\\php\\a\\b\\a.txt", "r");
 $s = fgets($txt);
