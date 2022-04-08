@@ -1,6 +1,6 @@
 <?php echo "this is working with directory and files ";
 //open windows text file by directory path
-$txt = fopen("C:\\xampp\\htdocs\\php\\a\\b\\a.txt", "r");
+$txt = fopen("C:\\xampp\\htdocs\\php\\directory\\b\\a.txt", "r");
 $s = fgets($txt);
 echo "</br>";
 echo $s;
@@ -12,7 +12,7 @@ echo date('YmdHis') . substr(round(microtime(true) * 100), -2);
 echo "</br>";
 
 //show windows directory path
-$dir = "/php/a/b/sticker/";
+$dir = "/php/directory/b/sticker/";
 $a = dir(getcwd());
 
 echo "</br>";
@@ -57,7 +57,7 @@ echo "</br>";
 //create set Name for files group
 foreach ($setName as $set) {
     $nameSet = array();
-    $names = scandir("{$_SERVER['DOCUMENT_ROOT']}/php/a/b/sticker/{$set}");
+    $names = scandir("{$_SERVER['DOCUMENT_ROOT']}/php/directory/b/sticker/{$set}");
     foreach ($names as $name) {
         if (is_numeric(strpos($name, ".svg"))) {
             // echo $name;
