@@ -1,4 +1,4 @@
-<?php echo "this is working with directory and files ";
+<?php echo "<h3>this is working with directory and files </h3>";
 //open windows text file by directory path
 $txt = fopen("C:\\xampp\\htdocs\\php\\directory\\b\\a.txt", "r");
 $s = fgets($txt);
