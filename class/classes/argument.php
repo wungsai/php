@@ -1,6 +1,6 @@
 <?php 
 class Argument{
-    var $data;
+    var $data="zero";
     function __construct($data)
     {
         $this->data= json_encode($data);
