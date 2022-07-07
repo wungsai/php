@@ -4,10 +4,11 @@
     <h3>All Useful functions in PHP</h3>    
     </header>
 <body>
-    <button onclick="openDirectoryPage()">Directory</button>
+    <button  onclick="openDirectoryPage()">Directory</button>
     <button onclick="openClassPage()">Class</button>
     <!-- <button onclick="openJsonPage()">Json</button> -->
     <button onclick="dateTime()">Date Time</button>
+    <button id="string">String</button>
 </body>
 
 <script>
@@ -23,5 +24,10 @@
     function dateTime(){
        console.log( window.location.href=window.location.href+"datetime");
     }
+
+    $string = document.querySelector("#string");
+    $string.addEventListener("click",function(){
+       window.location.href= window.location.href+"string";
+    });
 </script>
 </html>
