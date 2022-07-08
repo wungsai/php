@@ -9,6 +9,7 @@
     <!-- <button onclick="openJsonPage()">Json</button> -->
     <button onclick="dateTime()">Date Time</button>
     <button id="string">String</button>
+    <button id="arrayObject">Array and Object</button>
 </body>
 
 <script>
@@ -28,6 +29,9 @@
     $string = document.querySelector("#string");
     $string.addEventListener("click",function(){
        window.location.href= window.location.href+"string";
+    });
+    document.querySelector("#arrayObject").addEventListener("click",function(){
+       window.location.href = window.location.href+"arrayObject";
     });
 </script>
 </html>
