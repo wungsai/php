@@ -10,6 +10,7 @@
     <button onclick="dateTime()">Date Time</button>
     <button id="string">String</button>
     <button id="arrayObject">Array and Object</button>
+    <button id="conditionOP">Condition Operator</button>
 </body>
 
 <script>
@@ -32,6 +33,9 @@
     });
     document.querySelector("#arrayObject").addEventListener("click",function(){
        window.location.href = window.location.href+"arrayObject";
+    });
+    document.querySelector("#conditionOP").addEventListener("click",function(){
+       window.location.href = window.location.href+"conditionOP";
     });
 </script>
 </html>
