@@ -24,7 +24,9 @@ $responseString = ' [{"id":"1","reward_code":"PhoneTopup","reward_name":"topup p
     echo "<br>";
     print_r($topup->succeed);
     echo($topup->succeed->test);
-
+    $PhoneTopupReward = (object)["enable" => false, "enable_point" => false, "enable_percent" => false, "percent" => 0, "point" => 0];
+    echo "<br>";
+    print_r($PhoneTopupReward->point);
 ?>
 </p>
 </body></html>
