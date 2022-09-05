@@ -5,12 +5,19 @@
     </header>
 <body>
     <button  onclick="openDirectoryPage()">Directory</button>
+</br>
     <button onclick="openClassPage()">Class</button>
+    </br>
     <!-- <button onclick="openJsonPage()">Json</button> -->
     <button onclick="dateTime()">Date Time</button>
+    </br>
     <button id="string">String</button>
+    </br>
     <button id="arrayObject">Array and Object</button>
+    </br>
     <button id="conditionOP">Condition Operator</button>
+    </br>
+    <button id ="list">List</button>
 </body>
 
 <script>
@@ -36,6 +43,9 @@
     });
     document.querySelector("#conditionOP").addEventListener("click",function(){
        window.location.href = window.location.href+"conditionOP";
+    });
+    document.querySelector("#list").addEventListener("click",function(){
+       window.location.href = window.location.href+"list";
     });
 </script>
 </html>
