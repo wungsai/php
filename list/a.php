@@ -11,8 +11,6 @@
         border-bottom: 1px solid #ddd;
     }
 
-
-
     .content {
 
         position: absolute;
@@ -22,8 +20,6 @@
         border: 1px solid #ddd;
         z-index: 1;
     }
-
-
 
     .content a {
 
