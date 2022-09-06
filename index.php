@@ -17,7 +17,7 @@
     </br>
     <button id="conditionOP">Condition Operator</button>
     </br>
-    <button id ="list">List</button>
+    <button id ="list">Search Filter List</button>
 </body>
 
 <script>

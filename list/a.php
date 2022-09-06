@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html>
-<header align='center'>
-    <h2>List in Search box</h2>
-</header>
 <style>
     #input {
         /* box-sizing: border-box; */
@@ -43,10 +40,7 @@
     }
 </style>
 
-<body align='center'>
-    <p>
-    <h4>Start Here</h4>
-    <br>
+<body>
     <?php
     $chemicalList = ["H2O", "CO2", "Zn", "H3N2O"];
     function  toChemic($s)
@@ -74,15 +68,12 @@
         array_push($showList, toChemic($value));
     }
     ?>
-
-    </p>
-
     <div class='content'>
         <input id="input" type="text" onkeyup="search()">
         <div id="list" hidden>
             <?php
             foreach ($showList as $value) {
-                echo "<a href='a.php'>$value</a>";
+                echo "<a  hidden>$value</a>";
             }
             ?>
         </div>
