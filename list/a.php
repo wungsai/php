@@ -2,8 +2,8 @@
 <html>
 <style>
     #input {
-        /* box-sizing: border-box; */
-        /* background-position: 14px 12px; */
+        box-sizing: border-box;
+        background-position: 14px 12px;
         background-repeat: no-repeat;
         font-size: 16px;
         padding: 14px 12px;
