@@ -16,4 +16,5 @@ echo "<p>";
 echo "date(\"YmdHis\") . substr(round(microtime(true) * 100), -2)<br>";
 echo date("YmdHis") . substr(round(microtime(true) * 100), -2);
 echo "</p>";
+echo date("YmdHis") . substr(round(microtime(true) * 100), -2)+1;
 ?>
