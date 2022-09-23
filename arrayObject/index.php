@@ -3,6 +3,8 @@
 <p>
     <h4>Start Here</h4>
     <br>
+    <p>
+       <h5> json String </h5>
 <?php
 $responseString = ' [{"id":"1","reward_code":"PhoneTopup","reward_name":"topup phone
     number","percent":"5","point":"0","enable_percent":"1","enable_point":"0","enable":"1","created":"2022-06-20
@@ -29,4 +31,15 @@ $responseString = ' [{"id":"1","reward_code":"PhoneTopup","reward_name":"topup p
     print_r($PhoneTopupReward->point);
 ?>
 </p>
+</p>
+
+<h4> Convert Array values to Single String</h4>
+$array = ['123', '546', '333'];
+    </br>
+<?php
+$array = ['123', '546', '333'];
+$string = implode(", ", $array);
+echo "result: </br>";
+echo "({$string})";
+?>
 </body></html>
