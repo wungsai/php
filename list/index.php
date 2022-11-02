@@ -47,6 +47,9 @@
     <p>
     <h4>Start Here</h4>
     <br>
+    <p>
+        List= ["H2O", "CO2", "Zn", "H3N2O"]
+    </p>
     <?php
     $chemicalList = ["H2O", "CO2", "Zn", "H3N2O"];
     function  toChemic($s)
