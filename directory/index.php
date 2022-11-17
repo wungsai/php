@@ -7,10 +7,6 @@ echo $s;
 fclose($txt);
 echo "</br>";
 
-//generate reference number by datetime milisecond
-echo date('YmdHis') . substr(round(microtime(true) * 100), -2);
-echo "</br>";
-
 //show windows directory path
 $dir = "/php/directory/b/sticker/";
 $a = dir(getcwd());
@@ -47,12 +43,11 @@ foreach ($test as $t) {
     }
 }
 echo "</br> set Values:  ";
-// print_r($setValues);
+print_r($setValues);
 echo "</br> New set Values:  ";
 $setValues = substr($setValues, 0, strlen($setValues) - 1);
-// print_r($setValues);
-echo "</br>";
-// print_r($setName);
+print_r($setValues);
+
 echo "</br>";
 //create set Name for files group
 foreach ($setName as $set) {
@@ -69,7 +64,7 @@ foreach ($setName as $set) {
     //collected files name in Set Name
     $stickerSet[] = [$set => $nameSet];
 }
-echo "</br></br></br></br>Use</br></br></br></br></br>";
+echo "</br></br>Use</br></br></br>";
 // var_dump($stickerSet);
 
 $j = json_encode($stickerSet);
