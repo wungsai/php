@@ -17,4 +17,10 @@ echo "date(\"YmdHis\") . substr(round(microtime(true) * 100), -2)<br>";
 echo date("YmdHis") . substr(round(microtime(true) * 100), -2);
 echo "</p>";
 echo date("YmdHis") . substr(round(microtime(true) * 100), -2)+1;
+echo "</br> --------------------- </br>";
+date_default_timezone_set("Asia/Vientiane");
+$condition = date("Hi");
+echo $condition;
+
+if($condition<=$init)
 ?>
